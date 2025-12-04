@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Outfit, DM_Serif_Display } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
-const dmSerif = DM_Serif_Display({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-dm-serif",
-});
+
 
 export const metadata: Metadata = {
   title: "Rasti Lari Group",
@@ -25,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`flex min-h-screen flex-col ${outfit.variable} ${dmSerif.variable} font-sans`}
+     className="flex min-h-screen flex-col"
       >
         <SiteHeader />
         <main className="flex-1 ">{children}</main>
