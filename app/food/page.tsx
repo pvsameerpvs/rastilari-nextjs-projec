@@ -10,7 +10,7 @@ export default function FoodPage() {
       <section className="grid gap-8 md:grid-cols-[1.2fr,1fr] md:items-center">
         <FadeIn>
           <header className="max-w-2xl space-y-4">
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] section-title">
               Food
             </div>
 

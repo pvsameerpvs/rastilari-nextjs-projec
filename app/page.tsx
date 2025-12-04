@@ -5,6 +5,7 @@ import { HomeFoodSection } from "@/components/home/home-food-section";
 import { HomeGalleryTeaser } from "@/components/home/home-gallery-teaser";
 import { HomeHero } from "@/components/home/home-hero";
 import WelcomeContent from "@/components/home/WelcomeContent";
+import IntroVideoOverlay from "@/components/intro-video-overlay";
 import { products } from "@/data/products";
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
   return (
     <>
       {/* 🔵 FULL-WIDTH HERO (NO CONTAINER WRAPPER) */}
+       <IntroVideoOverlay />
       <HomeHero />
 
       {/* OTHER SECTIONS INSIDE CONTAINER */}

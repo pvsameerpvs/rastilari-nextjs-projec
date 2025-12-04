@@ -120,7 +120,8 @@ export function HomeHero() {
       </div>
 
 {/* Top-left image (hero-food-1.png) */}
-<div className="pointer-events-none absolute left-32 top-24 z-0 h-[120px] w-[120px]">
+<div className="pointer-events-none absolute left-32 top-24 z-0 h-[120px] w-[120px] hidden md:block
+">
   <Image
     src="/hero-food-1.png"
     alt="Food decoration"
@@ -132,7 +133,8 @@ export function HomeHero() {
 </div>
 {/* Right-center image (hero-food-2.png) */}
 
-<div className="pointer-events-none absolute right-24 top-1/2 z-0 -translate-y-1/2 translate-y-16 h-[120px] w-[120px]">
+<div className="pointer-events-none absolute right-24 top-1/2 z-0 -translate-y-1/2 translate-y-16 h-[120px] w-[120px] hidden md:block
+">
   <Image
     src="/hero-food-2.png"
     alt="Food decoration"
