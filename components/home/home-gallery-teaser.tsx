@@ -5,10 +5,10 @@ import { FadeIn } from "@/components/motion/fade-in";
 import { Button } from "@/components/ui/button";
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1585386959984-a4155223f3f8?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=1200&q=80",
+  "/1.jpeg",
+  "/2.jpeg",
+  "/3.jpeg",
+  "/4.jpeg",
 ];
 
 export function HomeGalleryTeaser() {

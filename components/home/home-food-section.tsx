@@ -36,7 +36,7 @@ export function HomeFoodSection() {
         <div className="grid grid-cols-2 gap-3">
           <div className="relative h-32 overflow-hidden rounded-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80"
+              src="/food.jpg"
               alt="Warehouse operations"
               fill
               className="object-cover"
@@ -44,7 +44,7 @@ export function HomeFoodSection() {
           </div>
           <div className="relative h-32 overflow-hidden rounded-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1585386959984-a4155223f3f8?auto=format&fit=crop&w=800&q=80"
+              src="/food2.jpg"
               alt="Food distribution"
               fill
               className="object-cover"
@@ -52,7 +52,7 @@ export function HomeFoodSection() {
           </div>
           <div className="relative h-32 overflow-hidden rounded-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1528184039930-bd03972bd974?auto=format&fit=crop&w=800&q=80"
+              src="/food8.jpg"
               alt="Retail shelves"
               fill
               className="object-cover"
@@ -60,7 +60,7 @@ export function HomeFoodSection() {
           </div>
           <div className="relative h-32 overflow-hidden rounded-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80"
+              src="/food4.jpg"
               alt="Logistics vehicles"
               fill
               className="object-cover"

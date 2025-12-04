@@ -3,32 +3,32 @@ import { FadeIn } from "@/components/motion/fade-in";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1585386959984-a4155223f3f8?auto=format&fit=crop&w=1400&q=80",
+    src: "/1.jpeg",
     alt: "Warehouse operations",
     label: "Warehouse operations",
   },
   {
-    src: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80",
+    src: "/2.jpeg",
     alt: "Confectionery display",
     label: "Confectionery display",
   },
   {
-    src: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1400&q=80",
+    src: "/3.jpeg",
     alt: "Dubai skyline",
     label: "Dubai headquarters",
   },
   {
-    src: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1400&q=80",
+    src: "/4.jpeg",
     alt: "Fleet of vehicles",
     label: "Distribution fleet",
   },
   {
-    src: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1400&q=80",
+    src: "/5.png",
     alt: "Logistics hub",
     label: "Logistics hub",
   },
   {
-    src: "https://images.unsplash.com/photo-1515162305284-9b50b9b22a19?auto=format&fit=crop&w=1400&q=80",
+    src: "/6.jpeg",
     alt: "Retail shelves",
     label: "Retail shelves",
   },
