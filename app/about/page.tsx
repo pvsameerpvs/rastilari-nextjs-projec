@@ -1,24 +1,89 @@
+import Image from "next/image";
 import { FadeIn } from "@/components/motion/fade-in";
 
 export default function AboutPage() {
   return (
-    <div className="container space-y-12">
-      <section className="max-w-3xl space-y-6">
+    <div className="container space-y-12 py-10 md:py-14">
+      {/* HERO */}
+      <section className="grid gap-8 md:grid-cols-[1.2fr,1fr] md:items-center">
         <FadeIn>
-          <div className="section-title">About us</div>
-          <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-            About Rasti Lari Group
-          </h1>
-          <p className="text-sm leading-relaxed text-slate-600">
-            Established in the 1920s by our founders HAJI ZAINAL RASTI &amp;
-            MOHAMED B. RASTI, the Rasti Lari multinational Group was set up in
-            Dubai, U.A.E. After 79 years, in 1999, the company was renamed by
-            the sons of Haji Zainal Rasti with the same level of commitment and
-            vision to form the RASTI LARI GROUP OF COMPANIES.
-          </p>
+          <div className="max-w-2xl space-y-5">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] section-title">
+              About us
+            </div>
+
+            <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+              About Rasti Lari Group
+            </h1>
+
+            <p className="text-sm leading-relaxed text-slate-600">
+              Established in the 1920s by our founders HAJI ZAINAL RASTI &amp;
+              MOHAMED B. RASTI, the Rasti Lari multinational Group was set up in
+              Dubai, U.A.E. After 79 years, in 1999, the company was renamed by
+              the sons of Haji Zainal Rasti with the same level of commitment
+              and vision to form the RASTI LARI GROUP OF COMPANIES.
+            </p>
+
+            <div className="grid gap-3 sm:grid-cols-3">
+              <div className="rounded-2xl border border-slate-200 bg-white p-4">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                  Roots
+                </div>
+                <div className="mt-1 text-lg font-semibold text-slate-900">
+                  1920s
+                </div>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-white p-4">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                  Renamed
+                </div>
+                <div className="mt-1 text-lg font-semibold text-slate-900">
+                  1999
+                </div>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-white p-4">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                  Base
+                </div>
+                <div className="mt-1 text-lg font-semibold text-slate-900">
+                  Dubai
+                </div>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.1}>
+          {/* IMAGE CARD */}
+          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <div className="relative h-[240px] w-full sm:h-[320px] md:h-[380px]">
+              <Image
+                src="/about-2.jpg" // <-- /public/about-2.jpg
+                alt="Rasti Lari group"
+                fill
+                priority
+                sizes="(min-width: 768px) 45vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+
+            {/* overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-slate-900/10 to-transparent" />
+
+            {/* caption */}
+            <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80">
+                Dubai, U.A.E.
+              </div>
+              <p className="mt-1 text-sm leading-relaxed text-white/90">
+                A legacy built on trust, quality and long-term partnerships.
+              </p>
+            </div>
+          </div>
         </FadeIn>
       </section>
 
+      {/* CONTENT */}
       <section className="grid gap-10 md:grid-cols-[1.6fr,1.2fr] md:items-start">
         <FadeIn>
           <div className="space-y-5 text-sm leading-relaxed text-slate-700">
@@ -57,7 +122,7 @@ export default function AboutPage() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <div className="space-y-4 rounded-3xl border border-slate-100 bg-white p-6 shadow-soft">
+          <div className="space-y-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 className="text-sm font-semibold tracking-tight text-slate-900">
               Our presence in Dubai
             </h3>
